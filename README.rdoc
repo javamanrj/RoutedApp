@@ -4,4 +4,6 @@
 
 2. Move the supplied "index.html.example" file to your server's /public/index.html
 
-3. Adjust script-urls as necessary to suit your environment.
+3. Copy ExtJS4 library to your server's "public/javascripts" directory
+
+4. Adjust script-urls as necessary to suit your environment.  ExtJS library is poinint to ext-4.0.2a
