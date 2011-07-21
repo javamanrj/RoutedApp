@@ -1,3 +1,8 @@
-Ext.define('Foo.controller.Albums', {
-	extend: 'Foo.controller.Base'
+Ext.define('RoutedApp.controller.Albums', {
+	extend: 'RoutedApp.controller.Base',
+	views: [
+		'albums.Index',
+		'albums.Create',
+		'albums.Edit'
+	]
 });

@@ -1,3 +1,8 @@
-Ext.define('Foo.controller.Artists', {
-	extend: 'Foo.controller.Base'
+Ext.define('RoutedApp.controller.Artists', {
+	extend: 'RoutedApp.controller.Base',
+	views: [
+		'artists.Index',
+		'artists.Create',
+		'artists.Edit'
+	]
 });

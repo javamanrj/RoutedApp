@@ -1,8 +1,9 @@
-Ext.define('Foo.view.Viewport', {
+Ext.define('RoutedApp.view.Viewport', {
     extend: 'Ext.container.Viewport',
 	requires: [
-        'Foo.view.Header',
-		'Foo.view.Footer'
+        'RoutedApp.view.Header',
+		'RoutedApp.view.Footer',
+		'RoutedApp.view.Navigation'
 	],	
 	layout: 'border',
 	items: [{
@@ -10,8 +11,14 @@ Ext.define('Foo.view.Viewport', {
 		region: 'north',
 		height: 40
 	}, {
+		xtype: 'view.Navigation',
+		region: 'west',
+		width: 200
+	}, {
 		xtype: 'tabpanel',	// <-- this is the render-target "workspace", since it's the center region
-		region: 'center'
+		//xtype: 'container',	// <-- instead of "tabpanel", can also do card-layout
+		//layout: 'card',
+		region: 'center'	
 	}, {
 		xtype: 'view.Footer',
 		region: 'south',

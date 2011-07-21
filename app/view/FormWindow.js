@@ -1,7 +1,7 @@
 /**
 * Generic Popup window for containing forms.
 */
-Ext.define('Foo.view.FormWindow', {
+Ext.define('RoutedApp.view.FormWindow', {
 	extend: 'Ext.window.Window',
 	alias: 'widget.view.FormWindow',
 	layout: 'card',
@@ -55,13 +55,14 @@ Ext.define('Foo.view.FormWindow', {
 	
 	onClickSave: function() {
 		// Save method here is probably added by form.Scaffold plugin.
-		var panel = this.layout.activeItem;
-		if (Ext.isFunction(panel.save)) {
-			this.layout.activeItem.save();
-			this.hide();
-		} else {
-			throw new Error('Foo.view.FormWindow tried to call #save upon activeItem but method does not exist.');
-		}
+		var panel = this.layout.activeItem;		
+		var path = panel.$className.split('.');
+		var controller = path[path.length-2];
+		Ext.dispatch(controller + "/save", {
+			sender: panel
+		});
+			
+		this.hide();		
 		
 	},
 	onClickCancel: function() {

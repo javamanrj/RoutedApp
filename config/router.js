@@ -5,8 +5,8 @@
 // I chose to use a method some others on the forum are using, to add the old Ext.util.Router from the beta.  I chose
 // to namespace Ext.ux.util.router.  I chose also to attach the instance to Ext.Router.
 
-Ext.require('Ext.ux.util.router.Router', function () {
-    Ext.Router = Ext.create('Ext.ux.util.router.Router', {});
+Ext.require('Ext.ux.router.Router', function () {
+    Ext.Router = Ext.create('Ext.ux.router.Router', {});
 
     // Alias dispatch/redirectTo for convenient use throughout app.
     Ext.dispatch = Ext.Function.bind(Ext.Router.dispatch, Ext.Router);

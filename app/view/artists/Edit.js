@@ -1,5 +1,5 @@
-Ext.define('Foo.view.artists.Edit', {
-	extend: 'Foo.view.artists.Create',
+Ext.define('RoutedApp.view.artists.Edit', {
+	extend: 'RoutedApp.view.artists.Create',
 	alias: 'widget.artists.Edit',
 	title: 'Edit Artist'
 });

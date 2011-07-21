@@ -1,7 +1,8 @@
-Ext.define('Foo.view.albums.Create', {
+Ext.define('RoutedApp.view.songs.Create', {
 	extend: 'Ext.form.Panel',
 	alias: 'widget.albums.Create',
 	title: 'Create Song',
+	bodyStyle: 'padding: 10px',
 	items: [{
 		xtype: 'textfield',
 		name: 'name',

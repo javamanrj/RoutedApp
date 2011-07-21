@@ -1,0 +1,6 @@
+[submodule "ux/router"]
+	path = ux/router
+	url = git://github.com/christocracy/Ext.ux.Router.git
+[submodule "ux/app"]
+	path = ux/app
+	url = git://github.com/christocracy/Ext.ux.app.RoutedApplication.git

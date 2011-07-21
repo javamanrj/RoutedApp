@@ -1,12 +1,12 @@
 // Configure auto-loader
 Ext.Loader.setConfig({
     enabled: true,
-    paths: {        
-        'Foo.lib': '/Web/javascripts/foo/lib',
-        'Ext.ux': '/Web/javascripts/foo/ux'
+    paths: { 
+        'RoutedApp.lib': '/javascripts/RoutedApp/lib',
+        'Ext.ux': '/javascripts/RoutedApp/ux'
     }
 });
 
-Ext.require([
-	'Foo.view.FormWindow'
-]);
+Ext.log = function() {
+	console.log.apply(console, arguments);
+}
