@@ -1,7 +1,7 @@
 == Sample ExtJS Application using Router
 
-Clone this repo into your server's "public/javascripts" directory.
+1. Clone this repo into your server's "public/javascripts" directory.
 
-Move the supplied "index.html.example" file in your server's /public/index.html
+2. Move the supplied "index.html.example" file to your server's /public/index.html
 
-Adjust script-urls as necessary to suit your environment.
+3. Adjust script-urls as necessary to suit your environment.
